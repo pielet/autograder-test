@@ -34,7 +34,7 @@ public class Engine extends XPathBaseVisitor<List<Node>> {
     @Override
     public List<Node> visitDocName(XPathParser.DocNameContext ctx) {
         List<Node> result = new ArrayList<>();
-        String basePath = "src/main/resources/";
+        String basePath = "/data/";
         String fileName = ctx.fileName().getText();
         String filePath = basePath + fileName;
 
